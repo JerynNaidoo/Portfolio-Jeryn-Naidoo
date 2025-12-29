@@ -43,9 +43,10 @@ const Hero = () => {
                 />
 
                 <p className='text-center md:tracking-wider mb-4 text-sm md:text-sm lg:text-1xl'>
-                    Hi, I'm Jeryn Naidoo, an aspiring software developer passionate about web developement, artificial intelligence, machine learnig, gaming, and many other fields of computer science. Please feel free to explore my portfolio to get a better understanding of my skills and projects.
+                    Hi, I'm Jeryn Naidoo, an aspiring software developer passionate about web developement, artificial intelligence, machine learning, gaming, and many other fields of computer science. Please feel free to explore my portfolio to get a better understanding of my skills and projects.
                 </p>
-                <a href="#about"><ShimmerButton 
+                <a href="#about">
+                    <ShimmerButton 
                     title="Show my work" 
                     icon = {<FaLocationArrow />}
                     position='right' 

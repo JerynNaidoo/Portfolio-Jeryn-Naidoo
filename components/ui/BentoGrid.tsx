@@ -51,11 +51,30 @@ export const BentoGridItem = ({
 
   const [copied, setCopied] = useState(false);
 
-  const handleCopy = () => 
-  {
-    navigator.clipboard.writeText('jerynnaidoo@gmail.com');
+  const handleCopy = async () => {
+  const text = "jerynnaidoo@gmail.com";
+
+  try {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      await navigator.clipboard.writeText(text);
+    } else {
+      const el = document.createElement("textarea");
+      el.value = text;
+      el.setAttribute("readonly", "");
+      el.style.position = "absolute";
+      el.style.left = "-9999px";
+      document.body.appendChild(el);
+      el.select();
+      document.execCommand("copy");
+      el.remove();
+    }
+
     setCopied(true);
+    setTimeout(() => setCopied(false), 3000);
+  } catch (err) {
+    console.error("Copy failed", err);
   }
+};
     
 
   return (
@@ -148,7 +167,7 @@ export const BentoGridItem = ({
 
         {id === 6 && (
           <div className=" mt-5 relative">
-            <div className={`absolute -bottom-5 right-0`}>
+            <div className={`absolute -bottom-5 right-0 pointer-events-none`}>
               <Lottie options = {
                 {
                   loop: copied,
