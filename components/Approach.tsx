@@ -1,17 +1,17 @@
 "use client";
 import React from "react";
 
-import { AnimatePresence, motion } from "motion/react";
+import { AnimatePresence, hover, motion } from "motion/react";
 import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
 import { div } from "motion/react-client";
 
 const Approach = () => {
   return (
     <section className="w-full py-20">
-        <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold">
+        <h1 className="text-3xl text-center md:text-4xl lg:text-6xl font-bold">
             My {''} 
             <span className="text-green-300">
-                approach
+                Approach
             </span>
         </h1>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
@@ -19,18 +19,18 @@ const Approach = () => {
         <Card 
             title="Planning & Srategy" 
             icon={<AceternityIcon order="Phase 1"/>}
-            description="We'll collaborate to map out your website's goals, target audience, and key functionalities. We'll discuss things like site structure, navigation, and content requirements"
+            description="First I like to map out the application's goals, target audience, and key functionalities. I then look into things like site structure, navigation, and content requirements"
             >
           <CanvasRevealEffect
             animationSpeed={5.1}
-            containerClassName="bg-emerald-900"
+            containerClassName="bg-emerald-500"
           />
         </Card>
 
         <Card 
             title="Development and progress update" 
             icon={<AceternityIcon order="Phase 2"/>}
-            description="Once we agree on the plan, I cue my lofi playlist and dive into coding. From initial sketches to polished code, I keep you updated every step of the way"
+            description="Once the application is all mapped out, I dive into coding. From initial sketches to polished code, I am always sure to keep my remote repository updated and clean"
             >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -46,7 +46,7 @@ const Approach = () => {
         <Card 
             title="Development and Launch" 
             icon={<AceternityIcon order="Phase 3"/>}
-            description="This is where the magic happens! Based on the approved design, I'll translate everything into functional code, building you website from the ground up">
+            description="This is where the magic happens! Based on the final design schema, I'll translate everything into functional code, building the application from the ground up. Should I be working in a team I will also ensure constant teamwork and open communication throughout the project">
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-sky-600"
@@ -73,6 +73,7 @@ const Card = ({
   const [hovered, setHovered] = React.useState(false);
   return (
     <div
+      onClick={() => setHovered(true)}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       className="border border-black/20 group/canvas-card flex items-center justify-center dark:border-white/20  max-w-sm w-full mx-auto p-4 relative lg:h-140 rounded-3xl"

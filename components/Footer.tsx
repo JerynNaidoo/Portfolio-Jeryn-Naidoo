@@ -3,6 +3,7 @@ import React from 'react'
 import ShimmerButton from './ui/ShimmerButton'
 import { FaLocationArrow } from 'react-icons/fa'
 import { socialMedia } from '@/data'
+import Link from 'next/link'
 
 const Footer = () => {
   return (
@@ -10,16 +11,16 @@ const Footer = () => {
 
         <div className='flex flex-col items-center'>
             <h1 className='text-3xl md:text-4xl lg:text-6xl font-bold lg:max-w-[45vw] text-center'>
-                Ready to take {' '}
+                Interested in {' '}
                 <span className='text-green-300'>
-                    your {' '}
+                    my {' '}
                 </span>
 
-                digital presence to the next level?
+                portfolio?
             </h1>
 
             <p className='text-white-200 md:mt-10 my-5 text-center'>
-                Reach out to me today and let&apos;s discuss how I can help you achieve your goals.
+                Reach out to me today and let&apos;s help eachother grow as developers.
             </p>
 
             <a 
@@ -40,7 +41,9 @@ const Footer = () => {
             <div className='flex items-center md:gap-3 gap-6'>
                 {socialMedia.map((profile => (
                     <div key={profile.id} className='w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black rounded-lg border border-green-300'>
-                        <img src={profile.img} alt={profile.id} width={20} height={20}/>
+                        <Link href={profile.link}>
+                            <img src={profile.img} alt={profile.id} width={20} height={20}/>
+                        </Link>
                     </div>
                 )))}
             </div>
