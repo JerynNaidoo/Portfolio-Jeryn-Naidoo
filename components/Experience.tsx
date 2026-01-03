@@ -11,7 +11,7 @@ const Experience = () => {
                 My {' '}
                 <span className="text-green-300">
 
-                    Work Experience
+                    Core Interests
                     
                 </span>
 

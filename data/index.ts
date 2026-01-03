@@ -75,7 +75,7 @@ export const projects = [
     des: "Survive hoards of zombies in order to rescue your fallen comrade in this thrilling, action-packed video game",
     img: "/Dead_Horizon.png",
     iconLists: ["/c++.png", "/raylibtech_main.png"],
-    link: "",
+    link: "https://github.com/JerynNaidoo/Dead-Horizon.git",
   },
   {
     id: 2,
@@ -83,7 +83,7 @@ export const projects = [
     des: "This natural langauge processing project makes use of machine learning librariess to build a prototype essay score classfier",
     img: "/Essay_Grading.png",
     iconLists: ["/NLTK.png", "/Pandas.png", "/NumPy.png", "/Matplotlib.png", "/Seaborn.svg", "/Sklearn.png"],
-    link: "",
+    link: "https://colab.research.google.com/drive/1wkVnDrxm_B5nDAzSK8B2sT37y4xxtk8c?usp=sharing",
   },
   {
     id: 3,
@@ -91,15 +91,15 @@ export const projects = [
     des: "A hoard survival shooter game set in the wild west. Made with Unity 6 and C#",
     img: "/Quickdraw.png",
     iconLists: ["/Unity.png", "/C#.png"],
-    link: "",
+    link: "https://github.com/JerynNaidoo/Quickdraw.git",
   },
   {
     id: 4,
     title: "Modern Personal Portfolio Website",
     des: "A modern portfolio website made using NextJS with Typescript and modern component libraries",
-    img: "/p4.svg",
+    img: "/Portfolio.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/Aceternity.png", "/React.png"],
-    link: "",
+    link: "https://github.com/JerynNaidoo/Portfolio-Jeryn-Naidoo.git",
   },
 ];
 
@@ -172,29 +172,29 @@ export const projects = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "AI and Machine Learning",
+    desc: "Currently working on enhancing my ability to implement and utilize machine learning and AI algorithms in real world projects",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Web Development",
+    desc: "Aspiring to enhance my web development skills by building one project at a time, starting with simple front end development and eventually becoming proficient in full stack development",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "Embedded Software Systems",
+    desc: "I one day wish to develop my C++ abilities to be able to work on embedded software for performance-critical systems, and eventually learning C for RTOS-powered systems",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Game Development",
+    desc: "With basic experience with the Unity game engine I one day wish to be able to develop simple video games. I also aspire to be able to utilize gameification for aspects out side of game development",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
@@ -204,13 +204,11 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/JerynNaidoo",
   },
   {
     id: 2,
-    img: "/twit.svg",
-  },
-  {
-    id: 3,
     img: "/link.svg",
+    link: "https://linkedin.com/in/jeryn-naidoo",
   },
 ];
