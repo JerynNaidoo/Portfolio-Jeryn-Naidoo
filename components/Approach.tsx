@@ -8,9 +8,9 @@ import { div } from "motion/react-client";
 const Approach = () => {
   return (
     <section className="w-full py-20">
-        <h1 className="text-3xl text-center md:text-4xl lg:text-6xl font-bold">
+        <h1 className="text-3xl text-center md:text-4xl lg:text-6xl font-bold dark:text-white text-black">
             My {''} 
-            <span className="text-green-300">
+            <span className="dark:text-green-300 text-green-800">
                 Approach
             </span>
         </h1>
@@ -23,7 +23,7 @@ const Approach = () => {
             >
           <CanvasRevealEffect
             animationSpeed={5.1}
-            containerClassName="bg-emerald-500"
+            containerClassName="bg-emerald-500 dark:bg-grey-800"
           />
         </Card>
 
@@ -34,12 +34,12 @@ const Approach = () => {
             >
           <CanvasRevealEffect
             animationSpeed={3}
-            containerClassName="bg-black"
+            containerClassName="dark:bg-black bg-red-400"
             colors={[
-              [236, 72, 153],
-              [232, 121, 249],
+              [236, 0, 0],
+              [232, 0, 0],
             ]}
-            dotSize={2}
+            dotSize={3}
           />
         </Card>
 
@@ -49,7 +49,7 @@ const Approach = () => {
             description="This is where the magic happens! Based on the final design schema, I'll translate everything into functional code, building the application from the ground up. Should I be working in a team I will also ensure constant teamwork and open communication throughout the project">
           <CanvasRevealEffect
             animationSpeed={3}
-            containerClassName="bg-sky-600"
+            containerClassName="bg-sky-600 dark:bg-grey-800"
             colors={[[125, 211, 252]]}
           />
         </Card>
@@ -116,7 +116,7 @@ const AceternityIcon = ({order}: {order: string}) => {
     <div>
         <button className="relative inline-flex h-12 overflow-hidden rounded-full p-px focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-5 py-2 text-white backdrop-blur-3xl text-2xl font-bold">
+            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-green-300 dark:bg-slate-950 px-5 py-2 dark:text-white text-black backdrop-blur-3xl text-2xl font-bold">
                 {order}
             </span>
         </button>

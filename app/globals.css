@@ -60,5 +60,10 @@
   }
 }
 
-
+.light {
+  --bg: #ffffff;       /* light bg */
+  --text: #0f172a;     /* light text (slate-900) */
+  --muted: #64748b;    /* light muted */
+  --surface: #f8fafc;  /* example */
+}
 
