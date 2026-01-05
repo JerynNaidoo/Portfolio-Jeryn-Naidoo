@@ -9,7 +9,7 @@ const Experience = () => {
             <h1 className='dark:text-white text-3xl text-black text-center md:text-4xl lg:text-6xl font-bold'>
 
                 My {' '}
-                <span className="text-green-300">
+                <span className="dark:text-green-300 text-green-800">
 
                     Core Interests
                     

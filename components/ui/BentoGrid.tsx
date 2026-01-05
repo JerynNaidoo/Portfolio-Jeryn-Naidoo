@@ -85,7 +85,7 @@ export const BentoGridItem = ({
       )}
       style={{
         background: "#020024",
-        backgroundColor: "linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(3, 84, 65, 1) 61%, rgba(149, 222, 93, 1) 100%)",
+        backgroundColor: "dark:linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(3, 84, 65, 1) 61%, rgba(149, 222, 93, 1) 100%) linear-gradient(90deg,rgba(212, 199, 199, 1) 0%, rgba(230, 223, 223, 1) 61%, rgba(148, 145, 145, 1) 100%)",
       }}
     >
       <div className={`${id === 6 && `flex justify-center`} h-full w-full`}>
